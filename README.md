@@ -5,11 +5,11 @@ Apache AGE(Incubating)
 
 Note: AgensGraph-Extension was renamed to Apache AGE based on Apache requirements since we donated this project to Apache Software Foundation.
 
-Apache AGE is an extension of PostgreSQL that provides an implemtation of the [openCypher](https://www.opencypher.org/) query language.
+Apache AGE is an extension of PostgreSQL that provides an implementation of the [openCypher](https://www.opencypher.org/) query language.
 
 This project is currently in alpha stage.
 
-The initial goal is as follows.
+The initial goal is as follows:
 
 * Support `CREATE` clause with a vertex
 * Support `MATCH` clause with a vertex
@@ -27,11 +27,11 @@ Apache AGE 0.2.0 supports PostgreSQL 11.
 Installation Procedure
 ----------------------
 
-The build process will attempt to use the first path in the PATH environment variable when installing AGE. If the pg_config path if located there, run the following command in the source code directory of Apache AGE to build and install the extension.
+The build process will attempt to use the first path in the PATH environment variable when installing AGE. If the pg_config path is located there, run the following command in the source code directory of Apache AGE to build and install the extension.
 
     $ make install
 
-If the path to your Postgres installation is not in the PATH variable, add the path in the arguements:
+If the path to your Postgres installation is not in the PATH variable, add the path in the arguments:
 
     $ make PG_CONFIG=/path/to/postgres/bin/pg_config install
 
@@ -51,7 +51,7 @@ Run the following statements in ``psql`` to create and load age in PostgreSQL.
 How To Contribute 
 ============
 
-There are multiple ways you can contribute to the project.And help is always welcome! All details can be found on the contributing page. Keep reading for a quick overview!
+There are multiple ways you can contribute to the project, and any help is always welcome! All details can be found on the contributing page. Keep reading for a quick overview!
 
 RoadmapApacheCommunityDocumentationDownload
 AGE Contribution Instructions
@@ -63,9 +63,6 @@ It is based on the powerful PostgreSQL RDBMS, it is very robust and fully-featur
 It optimized for handling complex connected graph data and provides plenty of powerful database features.
 leverages the rich eco-systems of PostgreSQL and can be extended with many outstanding external modules.
 
-How to contribute
-There are multiple ways you can contribute to the project.And help is always welcome! All details can be found on the contributing page. Keep reading for a quick overview!
-
 Becoming a Commiter
 ----------------------
 
@@ -76,14 +73,14 @@ Contributing by Helping Other Users
 
 A great way to contribute to AGE is to help answer user questions on the mailing list or on StackOverflow. There are always many new AGE users; taking a few minutes to help answer a question is a very valuable community service.
 
-Contributors should subscribe to this list and follow it in order to keep up to date on what’s happening in AGE. Answering questions is an excellent and visible way to help the community, which also demonstrates your expertise.
+Contributors should subscribe to this list and follow it to keep up to date on what’s happening in AGE. Answering questions is an excellent and visible way to help the community, which also demonstrates your expertise.
 
 See the Mailing Lists guide for guidelines about how to effectively participate in discussions on the mailing list, as well as forums like StackOverflow.
 
 Contributing by Reviewing Changes
 ----------------------
 
-Changes to AGE source code are proposed, reviewed and committed via Github pull requests (described in Insturction Link). Anyone can view and comment on active changes here. Reviewing others’ changes is a good way to learn how the change process works and gain exposure to activity in various parts of the code. You can help by reviewing the changes and asking questions or pointing out issues – as simple as typos or small issues of style.
+Changes to AGE source code are proposed, reviewed and committed via Github pull requests (described in Instruction Link). Anyone can view and comment on active changes here. Reviewing others’ changes is a good way to learn how the change process works and gain exposure to activity in various parts of the code. You can help by reviewing the changes and asking questions or pointing out issues – as simple as typos or small issues of style.
 
 Contributing Documentation Changes
 ----------------------
@@ -95,14 +92,14 @@ Contributing Bug Reports
 
 Bug reports are accompanied by a proposed code change to fix the bug. This isn’t always possible, as those who discover a bug may not have the experience to fix it. A bug may be reported by creating a JIRA but without creating a pull request.
 
-Bug reports are only useful however if they include enough information to understand, isolate and ideally reproduce the bug. Simply encountering an error does not mean a bug should be reported; as below, search JIRA and search and inquire on the AGE user / dev mailing lists first. Unreproducible bugs, or simple error reports, may be closed.
+Bug reports are only useful, however, if they include enough information to understand, isolate and ideally reproduce the bug. Simply encountering an error does not mean a bug should be reported; as below, search JIRA and search and inquire on the AGE user / dev mailing lists first. Unreproducible bugs, or simple error reports, may be closed.
 
 Contributing to JIRA Maintenance
 ----------------------
 
-Most contributors are able to directly resolve JIRAs. Use judgment in determining whether you are quite confident the issue should be resolved, although changes can be easily undone.
+Most contributors can directly resolve JIRAs. Use judgment in determining whether you are quite confident the issue should be resolved, although changes can be easily undone.
 
-earch JIRA for existing issues: New JIRA link here Type age [search terms] at the top right search box. If a logically similar issue already exists, then contribute to the discussion on the existing JIRA ticket and pull request, instead of creating a new ticket and PR.
+Search JIRA for existing issues: New JIRA link here Type age [search terms] at the top right search box. If a logically similar issue already exists, then contribute to the discussion on the existing JIRA ticket and pull request instead of creating a new ticket and PR.
 
 Preparing to Contribute Code Changes
 ----------------------
@@ -115,7 +112,7 @@ Before proceeding, contributors should evaluate if the proposed change is likely
 
 * If simply having trouble using AGE, use the mailing lists first, rather than creating a JIRA ticket or proposing a change.
 
-* When in doubt, email user@age.apache.org first about the possible change
+* When in doubt, email user@age.apache.org first about the possible change.
 Search the user@age.apache.org and dev@age.apache.org mailing list Archive Link Here for related discussions.
 
 Search JIRA for existing issues: New JIRA link here
@@ -223,7 +220,7 @@ The more context the reporter can give about a bug, the better, such as: how the
 
 Ideally, bug reports are accompanied by a proposed code change to fix the bug. This isn’t always possible, as those who discover a bug may not have the experience to fix it. A bug may be reported by creating a JIRA ticket without creating a pull request.
 
-Data correctness/data loss bugs are very serious. Make sure the corresponding bug report JIRA ticket is labeled as correctness or data-loss. Please send an email to dev@age.apache.org after submitting the bug report, to quickly draw attention to the issue.
+Data correctness/data loss bugs are very serious. Make sure the corresponding bug report JIRA ticket is labeled as correctness or data-loss. Please send an email to dev@age.apache.org after submitting the bug report to quickly draw attention to the issue.
 
 Performance issues are classified as bugs. The pull request to fix a performance bug must provide a benchmark to prove the problem is indeed fixed.
 
@@ -235,7 +232,7 @@ Inevitably some issues are duplicates, become obsolete, can not be reproduced, c
 When resolving JIRA tickets, please observe the following conventions:
 
 * Resolve as Fixed if there’s a release or code commit that resolved the issue.
-    * Set Fix Version(s), if and only if the resolution is Fixeds
+    * Set Fix Version(s), if and only if the resolution is Fixed.
     * Set Assignee to the person who contributed the most to its resolution, usually the person who opened the PR that resolved the issue.
 * For issues that can’t be reproduced against master as reported, resolve as Cannot Reproduce.
 * If the issue is the same as or a subset of another issue, resolved as Duplicate
@@ -243,7 +240,7 @@ When resolving JIRA tickets, please observe the following conventions:
     * Link it to the JIRA ticket it duplicates.
 * If the issue seems clearly obsolete and applies to issues or components that have changed radically since it was opened, resolve as Not a Problem
 * If the issue doesn’t make sense – not actionable – resolve as Invalid.
-* If it’s a coherent issue, but there is a clear indication that there is not support or interest in acting on it, then resolve as Won’t Fix.
+* If it’s a coherent issue, but there is a clear indication that there is no support or interest in acting on it, then resolve as Won’t Fix.
 
 Code Style Guide
 ----------------------
@@ -251,7 +248,7 @@ Code Style Guide
 For a full list of coding style guidelines, please refer to the style setup in the clang-format.5 in the AGE git repository.
 
 General Rules
-NOTE: In some environments, code block does not properly show indentation. To see the correct indentation, copy and paste the code to a text editor.
+NOTE: In some environments, the code block does not properly show indentation. To see the correct indentation, copy and paste the code to a text editor.
 
 ##### Indentation
 
